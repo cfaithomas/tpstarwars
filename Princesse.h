@@ -20,8 +20,8 @@ private:
 public:
     Princesse(const string &nom, const string &couleurrobe);
 
-    void sefairekidnapper(const MembreEmpire &me);
-    void sefaireLiberer(const Rebel &re);
+    void sefairekidnapper(const MembreEmpire &me) ;
+    void sefaireLiberer(const Rebel &re) ;
     void changerRobe(const string &newcouleurrobe);
 
 
