@@ -23,6 +23,7 @@ public:
     void liberer(Princesse &p) ;
     void coffrer(MembreEmpire &me) const;
 
+    void sePresenter() const override;
 };
 
 

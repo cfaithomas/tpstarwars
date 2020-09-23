@@ -23,4 +23,10 @@ void Rebel::coffrer(MembreEmpire &me) const{
 Rebel::Rebel(const string &nom) : Humanoide(nom) {
     popularite=0;
     adjectif="Padawan";
+    boissonfavorite="Whisky";
+}
+
+void Rebel::sePresenter() const {
+    Humanoide::sePresenter();
+    parler("Mon rang est "+adjectif+" ma popularité est de "+to_string(popularite));
 }

@@ -23,6 +23,8 @@ public:
 
     const string quel_est_ton_nom() const override;
 
+    void sePresenter() const override;
+
 
 private:
     int nbprincesses;

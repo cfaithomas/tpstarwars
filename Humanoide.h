@@ -10,8 +10,10 @@
 using namespace std;
 class Humanoide {
 
-    private:
+private:
+
     string nom;
+protected:
     string boissonfavorite;
 
 public:

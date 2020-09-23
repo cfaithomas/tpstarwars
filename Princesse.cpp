@@ -7,6 +7,7 @@
 Princesse::Princesse(const string &nom, const string &couleurrobe) : Humanoide(nom),
                                                                      couleurrobe(couleurrobe) {
     etat=false; //princesse libre
+    boissonfavorite="lait bleu";
 }
 void Princesse::sefairekidnapper(const MembreEmpire &me) {
 parler("HIIIIIIIIIIIIIIIIIIIIII!!!!!!");
@@ -26,4 +27,9 @@ parler("Regarder ma nouvelle robe "+couleurrobe);
 
 const string Princesse::quel_est_ton_nom() const {
     return "Princesse "+Humanoide::quel_est_ton_nom();
+}
+
+void Princesse::sePresenter() const {
+    Humanoide::sePresenter();
+    parler("ma robe est de couleur "+couleurrobe);
 }
