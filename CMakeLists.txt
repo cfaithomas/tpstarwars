@@ -3,4 +3,4 @@ project(tpstarwars)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tpstarwars main.cpp Humanoide.cpp Humanoide.h Princesse.cpp Princesse.h Rebel.cpp Rebel.h MembreEmpire.cpp MembreEmpire.h)
+add_executable(tpstarwars main.cpp Humanoide.cpp Humanoide.h Princesse.cpp Princesse.h Rebel.cpp Rebel.h MembreEmpire.cpp MembreEmpire.h barman.cpp barman.h)
