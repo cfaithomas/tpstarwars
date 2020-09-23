@@ -18,3 +18,7 @@ void barman::sePresenter() const {
     Humanoide::sePresenter();
     parler("le nom de mon bar est "+nomdubar);
 }
+
+void barman::servir(const Humanoide &h) {
+h.boire(); //appel il boira forcement sa boisson favorite
+}
