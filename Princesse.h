@@ -7,11 +7,13 @@
 
 
 #include <string>
-#include "MembreEmpire.h"
+
 #include "Rebel.h"
-#include "Humanoide.h"
+#include "MembreEmpire.h"
 
 using namespace std;
+class MembreEmpire; //predeclaration dans le cas de  d'inter dépendance entre classes
+class Rebel;
 class Princesse :public Humanoide{
 
 private:
@@ -21,7 +23,7 @@ public:
     Princesse(const string &nom, const string &couleurrobe);
 
     void sefairekidnapper(const MembreEmpire &me) ;
-    void sefaireLiberer(const Rebel &re) ;
+    void sefaireLiberer(const Rebel &re)  ;
     void changerRobe(const string &newcouleurrobe);
 
 

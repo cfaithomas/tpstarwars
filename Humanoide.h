@@ -15,13 +15,14 @@ class Humanoide {
     string boissonfavorite;
 
 public:
-    Humanoide(const string &nom);
+    Humanoide();
+    explicit Humanoide(const string &nom);
 
-    virtual void parler(const string &texte);
-    virtual void boire();
-    virtual const string& quel_est_ton_nom();
-    virtual const string& quel_est_ta_boissonfavorite();
-    virtual void sePresenter();
+    virtual void parler(const string &texte) const;
+    virtual void boire() const;
+    virtual const string& quel_est_ton_nom() const;
+    virtual const string& quel_est_ta_boissonfavorite() const;
+    virtual void sePresenter() const;
 
 
 
