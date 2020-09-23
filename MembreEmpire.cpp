@@ -25,3 +25,7 @@ recompense=0;
 
 }
 
+const string MembreEmpire::quel_est_ton_nom() const {
+    return Humanoide::quel_est_ton_nom()+" le "+rang;
+}
+

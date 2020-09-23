@@ -6,7 +6,7 @@
 #include "Rebel.h"
 
 void Rebel::tirer(const MembreEmpire &me) const {
-    cout<<"Beau coup de sabre laser";
+    cout<<"Beau coup de sabre laser"<<endl;
     parler("Que la force soit avec moi");
 }
 

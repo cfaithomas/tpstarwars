@@ -20,7 +20,7 @@ public:
 
     virtual void parler(const string &texte) const;
     virtual void boire() const;
-    virtual const string& quel_est_ton_nom() const;
+    virtual const string quel_est_ton_nom() const;
     virtual const string& quel_est_ta_boissonfavorite() const;
     virtual void sePresenter() const;
 

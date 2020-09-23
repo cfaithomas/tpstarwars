@@ -21,6 +21,8 @@ public:
     void kidnapper(Princesse &p);
     void sefairEmprisonner(const Rebel &r);
 
+    const string quel_est_ton_nom() const override;
+
 
 private:
     int nbprincesses;

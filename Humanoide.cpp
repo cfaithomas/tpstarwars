@@ -13,7 +13,7 @@ void Humanoide::parler(const string &texte) const {
 cout<<nom<<" - "<<texte<<endl;
 }
 
-const string &Humanoide::quel_est_ton_nom() const{
+const string Humanoide::quel_est_ton_nom() const{
     return nom;
 }
 

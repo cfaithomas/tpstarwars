@@ -26,6 +26,7 @@ public:
     void sefaireLiberer(const Rebel &re)  ;
     void changerRobe(const string &newcouleurrobe);
 
+    const string quel_est_ton_nom() const override;
 
 };
 

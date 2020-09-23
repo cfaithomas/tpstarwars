@@ -23,3 +23,7 @@ void Princesse::changerRobe(const string &newcouleurrobe) {
 couleurrobe=newcouleurrobe;
 parler("Regarder ma nouvelle robe "+couleurrobe);
 }
+
+const string Princesse::quel_est_ton_nom() const {
+    return "Princesse "+Humanoide::quel_est_ton_nom();
+}
