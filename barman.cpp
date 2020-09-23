@@ -4,11 +4,12 @@
 
 #include "barman.h"
 
-barman::barman(const string &nom) : nom(nom) {
+barman::barman(const string &nom):Humanoide(nom) {
     nomdubar="Chez "+nom;
+    boissonfavorite="vin";
 }
 
-barman::barman(const string &nom, const string &nomdubar) : nom(nom), nomdubar(nomdubar) {}
+barman::barman(const string &nom, const string &nomdubar) : Humanoide(nom), nomdubar(nomdubar) {}
 
 void barman::parler(const string &texte) const {
     Humanoide::parler(texte+" coco");

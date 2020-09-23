@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Humanoide.h"
 #include "Princesse.h"
+#include "barman.h"
 
 
 int main() {
@@ -20,6 +21,11 @@ r.tirer(membreEmpire);
 r.coffrer(membreEmpire);
 r.liberer(p);
 r.sePresenter();
+barman barman("Dede");
+barman.sePresenter();
+barman.servir(r);
+barman.parler("je te parle");
+
 
     return 0;
 }
