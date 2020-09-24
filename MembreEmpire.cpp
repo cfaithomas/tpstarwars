@@ -18,6 +18,7 @@ MembreEmpire::MembreEmpire(const string &nom) : Humanoide(nom) {
     nbprincesses=0;
     recompense=100;
     boissonfavorite="Vin de fleur";
+
 }
 
 void MembreEmpire::sefairEmprisonner(const Rebel &r){
@@ -33,5 +34,9 @@ const string MembreEmpire::quel_est_ton_nom() const {
 void MembreEmpire::sePresenter() const {
     Humanoide::sePresenter();
     parler("Mon rang est :"+rang+" j'ai enlevé "+to_string(nbprincesses)+" princesse(s) et ma récompense est de "+to_string(recompense)+" peggats");
+}
+
+int MembreEmpire::quel_est_ta_recompense() const{
+    return recompense;
 }
 

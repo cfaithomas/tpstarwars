@@ -9,22 +9,22 @@
 #include "Humanoide.h"
 
 using namespace std;
-class barman :public Humanoide{
+class Barman : public Humanoide{
 
 private:
     string nom;
     string nomdubar;
 
 public:
-    barman(const string &nom);
+    Barman(const string &nom);
 
-    barman(const string &nom, const string &nomdubar);
+    Barman(const string &nom, const string &nomdubar);
 
     void parler(const string &texte) const override;
 
     void sePresenter() const override;
 
-    void servir(const Humanoide &h);
+    void servir(const Humanoide &h) const;
 
 
 };
