@@ -33,6 +33,9 @@ int main() {
     barman.parler("je te parle");
     yoda.telepathie(a,membreEmpire);
     yoda.sePresenter();
+    Rebel yoda2=Yoda(a); //ok pour le compilateur
+    Yoda *y=(Yoda*)&yoda2;  //on recupere l'adresse de yoda2 on cast le pointeur avec (Yoda*)
+    y->telepathie(a,membreEmpire);
 
 
 
